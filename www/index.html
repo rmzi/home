@@ -1,0 +1,26 @@
+<html>
+
+  <head>
+    <title> Doodle it up </title>
+  </head>
+
+  <body>
+    <css-doodle>
+      :doodle {
+        @grid: 15 / 110em 100em;
+
+      }
+      :nth-child(even):after {
+        content: 'rmzi';
+        color: @pick(
+          #FF4D4D, #FF8364, #FDB87D, #FFE8D5, #BADA55
+        );
+        font-size: 1.5em;
+        transform: rotate(@rand(360deg)) scale(@rand(2));
+      }
+    </css-doodle>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/css-doodle/0.2.3/css-doodle.min.js"></script>
+  </body>
+
+</html>
